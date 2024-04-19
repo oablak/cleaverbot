@@ -10,6 +10,7 @@ import speech_recognition as sr
 translator = Translator()
 rec = sr.Recognizer()
 
+
 def record():
     with sr.Microphone() as source:
         voice_rec = ""
@@ -30,9 +31,11 @@ def speak(text):
     playsound(file)
     os.remove(file)
 
+
 def translate(who, text, lang):
     translated = translator.translate(text, dest=lang)
     return translated.text
+
 
 @Cleverbot.connect
 def chat(bot, user_prompt, bot_prompt):
