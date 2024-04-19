@@ -1,2 +1,4 @@
 cleverbotfree
 googletrans==3.1.0a0
+gtts # metni sese donusturme
+playsound==1.2.2
